@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main>
+        <section>
+            <div class="time">
+                <h2 id="hours">00</h2>
+                <small>Hours</small>
+            </div><!--end time-->
+        
+            <div class="time">
+                <h2 id="minutes">00</h2>
+                <small>Minutes</small>
+            </div><!--end time-->
+
+            <div class="time">
+                <h2 id="seconds">00</h2>
+                <small>Seconds</small>
+            </div><!--end time-->
+
+            <div class="time">
+                <h2 id="milliseconds">000</h2>
+                <small>Milliseconds</small>
+            </div><!--end time-->
+
+        </section><!--end section-->
+
+        <div class="buttons-container">
+            <button type="button" id="start">Start</button>
+            <button type="button" id="pause">Pause</button>
+            <button type="button" id="stop">Stop</button>
+        </div><!--end buttons container-->
+
+        <div class="date-container">
+            <span id="dayWeek"></span>
+            <span id="dayMonth"></span>
+            <span id="month"></span>
+            <span id="year"></span>
+        </div><!--end date container-->
+
+        <div class="date-format-container">
+            <span id="dayFormat"></span>
+            <span id="monthFormat"></span>
+            <span id="yearFormat"></span>
+        </div><!--end date format container-->
+
+    </main><!--end main-->
+
+    <script src="js/stopwatch.js"></script>
+
+</body>
+</html>
