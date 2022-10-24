@@ -2,7 +2,7 @@
 const hoursElement = document.getElementById("hours")
 const minutesElement = document.getElementById("minutes")
 const secondsElement = document.getElementById("seconds")
-const milisecondsElement = document.getElementById("milliseconds")
+const millisecondsElement = document.getElementById("milliseconds")
 const buttonsContainer = document.querySelectorAll(".buttons-container button")
 const dayWeekElement = document.getElementById("dayWeek")
 const dayMonthElement = document.getElementById("dayMonth")
@@ -84,7 +84,7 @@ function stopCounter() {
     hoursElement.textContent = "00"
     minutesElement.textContent = "00"
     secondsElement.textContent = "00"
-    milisecondsElement.textContent = "000"
+    millisecondsElement.textContent = "000"
 } 
 
 // ADICIONANDO VALOR
@@ -114,5 +114,5 @@ function counter() {
     hoursElement.textContent = addValueToCounter(hours)
     minutesElement.textContent = addValueToCounter(minutes)
     secondsElement.textContent = addValueToCounter(seconds)
-    milisecondsElement.textContent = addValueToMilliseconds(milliseconds)
+    millisecondsElement.textContent = addValueToMilliseconds(milliseconds)
 }
