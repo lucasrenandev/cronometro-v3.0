@@ -23,7 +23,7 @@ let interval = null
 const daysWeekArray = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"]
 
 // CRIANDO ARRAY COM OS MÊSES DO ANO
-const fullYearArray = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"] 
+const fullYearArray = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"] 
 
 // ADICIONANDO EVENTO PARA TODOS OS BOTÕES
 buttonsContainer.forEach(button =>  {
@@ -54,7 +54,7 @@ function getDate() {
 
     dayWeekElement.textContent = `${daysWeekArray[dayWeek]},`
     dayMonthElement.textContent = `${dayMonth} de`
-    monthElement.textContent = `${fullYearArray[month]} de`
+    monthElement.textContent = `${fullYearArray[month].toLowerCase()} de`
     yearElement.textContent = year
 
     dayFormatElement.textContent = `${dayMonth} /`
