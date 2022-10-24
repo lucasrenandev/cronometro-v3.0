@@ -101,7 +101,7 @@ function addValueToMilliseconds(value) {
 function counter() {
     if((milliseconds += 10) === 1000) {
         seconds ++
-        milliseconds = 0
+        milliseconds = 10
     }
     if(seconds === 60) {
         minutes ++
