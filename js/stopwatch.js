@@ -23,7 +23,7 @@ let interval = null
 const daysWeekArray = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"]
 
 // CRIANDO ARRAY COM OS MÊSES DO ANO
-const fullYearArray = ["janeiro", "feveiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"] 
+const fullYearArray = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"] 
 
 // ADICIONANDO EVENTO PARA TODOS OS BOTÕES
 buttonsContainer.forEach(button =>  {
