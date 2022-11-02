@@ -53,12 +53,12 @@ function getDate() {
     const year = today.getFullYear()
 
     dayWeekElement.textContent = `${daysWeekArray[dayWeek]},`
-    dayMonthElement.textContent = `${dayMonth} de`
+    dayMonthElement.textContent = `${addValueToCounter(dayMonth)} de`
     monthElement.textContent = `${fullYearArray[month].toLowerCase()} de`
     yearElement.textContent = year
 
-    dayFormatElement.textContent = `${dayMonth} /`
-    monthFormatElement.textContent = `${month + 1} /`
+    dayFormatElement.textContent = `${addValueToCounter(dayMonth)} /`
+    monthFormatElement.textContent = `${addValueToCounter(month + 1)} /`
     yearFormatElement.textContent = year
 }
 // CHAMANDO A FUNÇÃO OBTER DATA
