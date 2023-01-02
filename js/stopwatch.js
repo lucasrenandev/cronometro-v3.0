@@ -28,7 +28,7 @@ const fullYearArray = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho
 // ADICIONANDO EVENTO PARA TODOS OS BOTÕES
 buttonsContainer.forEach(button =>  {
     button.addEventListener("click", function(event) {
-        const btnId = event.currentTarget.id
+        const btnId = event.target.id
         
         if(btnId === "start") {
             pauseCounter()
@@ -53,8 +53,8 @@ function getDate() {
     const year = today.getFullYear()
 
     dayWeekElement.textContent = `${daysWeekArray[dayWeek]},`
-    dayMonthElement.textContent = `${addValueToCounter(dayMonth)} de`
-    monthElement.textContent = `${fullYearArray[month].toLowerCase()} de`
+    dayMonthElement.textContent = `${dayMonth} de`
+    monthElement.textContent = `${fullYearArray[month]} de`
     yearElement.textContent = year
 
     dayFormatElement.textContent = `${addValueToCounter(dayMonth)} /`
